@@ -8,7 +8,7 @@ Webpack is a fantasticly powerful tool that lets you build Webpack using some pr
 
 Here's the ideal API I'm exploring at the moment:
 
-```
+```javascript
 const webpackConfig = new Nicepack()
   .root('./src')
   .entry('app/index.js')
@@ -20,7 +20,7 @@ This represents one approach for how to do that. I don't know whether this is go
 
 One workaround for this is also expose an API on Nicepack to add configurations manually. For example:
 
-```
+```javascript
 const webpackConfig = new Nicepack()
   .entry('./src/app/index.js')
   .use(babel())
@@ -43,7 +43,7 @@ const webpackConfig = new Nicepack()
   .config
 ```
 
-# What's done already?
+## What's done already?
 
 Massive work in progress, nothing really here yet.
 
